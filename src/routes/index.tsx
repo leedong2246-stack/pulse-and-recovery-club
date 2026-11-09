@@ -121,7 +121,7 @@ function RecoveryCard() {
 function RecommendationCard() {
   const [i, setI] = useState(0);
   const [started, setStarted] = useState(false);
-  const rec = recs[i];
+  const rec = recs[i] ?? recs[0]!;
   const Icon = icons[rec.sport];
   return (
     <section className={`${card} relative h-full overflow-hidden`}>
